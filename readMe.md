@@ -1,3 +1,3 @@
 Send it
-#starting gh-pages branch
+#starting the  gh-pages branch
 
