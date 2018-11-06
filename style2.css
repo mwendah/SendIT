@@ -1,0 +1,35 @@
+body{
+	margin: 0;
+	border:0px;
+
+}
+#header{
+	width: 110;
+	height: 149px;
+	background:black;
+	color: white;
+}
+#siderbar{
+	width: 300px;
+	height: 490px;
+	background: #43af50;
+	float:left;
+}
+#data{
+	height: 490px;
+	background: #006400;
+	color: white
+	font-family:sans-serif ;
+}
+ul li {
+
+	padding: 10px;
+	border-bottom: 2px solid grey;
+}
+ul li:hover {
+	background:#006400;
+	color: white; 
+
+
+
+}
