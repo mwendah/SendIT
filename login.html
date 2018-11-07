@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Login</title>
+      <link rel="stylesheet" href="style.css">
+     
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              SendIT
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="parcel.html">My parcel</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+           
+<div class="login-page">
+	<div class="form">
+		<form class="register-form">
+			<input type="text" placeholder="user name" required="required">
+			<input type="password" placeholder="password" required="required">
+			<input type="text" placeholder="email id" required="required" >
+			<button>Register</button>
+			<p class="notify">Already a SendIt <a href="">Login</a></p>
+</form>
+			<form class="login-form">
+				<input type="text" placeholder="user name" required="required">
+			<input type="password" placeholder="password" required="required">
+			<button>Login</button>
+			<p class="notify">Not a SendIt <a href="">Register</a></p>
+		</form>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script >
+	$('.notify a').click(function(){
+		$('form').animate({height:"toggle",opacity:"toggle"},"slow");
+	});
+</script>s
+
+
+
+</header>
+</body>
+</html>
