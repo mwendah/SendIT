@@ -1,0 +1,290 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+ 
+body {
+      font-family: "Roboto",sans-serif;
+      font-weight: lighter;
+}
+ 
+header {
+      width: 100%;
+      height: 100vh;
+      background: url(need-to-send-a-parcel.png) no-repeat 50% 50% ;
+      background-size: cover;
+}
+
+ 
+ .column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+.row 
+{
+      margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+ 
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: steelblue;
+}
+ 
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+
+}
+ 
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(, 0, 0, 0);
+      overflow: hidden;
+       color: steelblue;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+ 
+nav.black ul {
+      background: #000;
+}
+ 
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+ 
+nav ul li a {
+      text-decoration: none;
+      color: steelblue;
+      font-size: 16px;
+}
+ 
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+ 
+@media(max-width: 786px) {
+ 
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+            color: #17202a;
+      }
+ 
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+ 
+      nav.black ul {
+            background: #000;
+      }
+ 
+      .showing {
+            max-height: 34em;
+      }
+ 
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+ 
+      .menu-icon {
+            display: block;
+      }
+ 
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa
+ {
+      font-size:50px;
+}
+
+
+.login-page{
+      width: 360px;
+      padding: 10% 0 0;
+      margin: auto;
+
+}
+
+.form{
+      position: relative;
+      z-index: 1;
+      background-color: rgba(7,40,195,0.8);
+      max-width: 360px;
+      margin: 0 auto 80px;
+      padding: 45px;
+      text-align: center;
+}
+.form input{
+      font-family: "Roboto".sans-serif;
+      outline: 0;
+      background:#f2f2f2;
+      width: 100%;
+      border:0;
+      margin: 0 0 15px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 14px;
+}
+.form button{
+      font-family: "Roboto",sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background:#45af50;
+      width: 100%;
+      border:0;
+      padding: 15px;
+      color: #ffffff;
+      font-size: 14pz;
+      cursor: pointer;
+}
+.form button:hover,.form button:active {
+      background-color: #43a047;
+
+}
+
+.form .notify{
+      margin:15px 0 0;
+      color: aliceblue;
+      font-size: 12px;
+}
+
+.form.notify a{
+      color: #43af50;
+      text-decoration:none;
+}
+
+.form.register-form{
+      display: none;
+}
+
+
+/*-----category*/
+
+*{
+      box-sizing: border-box;
+}
+
+
+.columns{
+      float: left;
+      width: 33%;
+      padding: 8px;
+
+}
+
+.price{
+      list-style-type: none;
+      border:1px solid #eee;
+      margin: 0;
+      padding: 0;
+      -webkit-transistion:0.3s;
+      transition: 0.3s;
+
+}
+
+.price:hover:{
+      box-shadow: 0 8px 12px 0;
+      rgba(0,0,0,0.2);
+}
+.price .head{
+      background-color: #111;
+      color:white;
+      font-size: 24px;
+
+}
+
+
+.price li{
+      border-bottom: 1px solid #eee;
+      padding: 20px;
+      text-align: center;
+
+}
+.price .grey{
+      background-color: #eee;
+      font-size: 20px;
+
+}
+.button{
+      background-color: #48d1cc;
+      border:none;
+      color: white;
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration:none;
+      font-size: 18px; 
+}
+table {
+  width:100%
+}
+th {
+  background:#666;
+  color:#fff;
+} td {
+  padding:5px;
+}
+
+input {
+  width:100%;
+  height: 24px;
+  font-size: 18px;
+  padding:2px;
+  border:0;
+}
+
+h1 {
+  font-weight: normal;
+  display: block;
+
+}

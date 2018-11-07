@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>My parcel</title>
+      <link rel="stylesheet" href="style.css">
+     
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="logo">
+                              SendIT
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="parcel.html">My parcel</a></li>
+                                    <li><a href="track.html">Track IT</a></li>
+
+                              </ul>
+                        </div>
+                  </nav>
+
+
+            </header>
+
+      </div>
+
+
+
+
+
+
+
+<h1>Parcel Management</h1>
+<input type="search" id="search" placeholder="Filter parcel">
+<input type="text" id="tracking number"  placeholder="tracking number" required="">
+<input class="grey"><a href="Add.html" class="button">Add</a>
+
+
+<table>
+  <tr>
+    <th style="width:37%">Parcel ID</th>
+    <th>Sender</th>
+    <th>Recipient</th>
+    <th>Weight</th>
+    <th>Action</th>
+    
+  </tr>
+  
+  <tr>
+    <td id="title">1</td>
+    <td>Mr.x </td>
+    <td>Mr.Y</td>
+    <td>19kg</td>
+    <td class="grey"><a href="track.html" class="button">Track</a></td>
+  </tr>
+  
+  <tr>
+    <td id="title">2</td>
+    <td>Mr.p</td>
+    <td>Mr.nm</td>
+    <td>12kg</td>
+    <td class="grey"><a href="track.html" class="button">Track</a></td>
+  </tr>
+  
+  
+  
+</table>
+
+
+
+<script >
+  
+$('#search').keyup(function() {
+  var regex = new RegExp($('#search').val(), "i");
+  var rows = $('table tr:gt(0)');
+  rows.each(function (index) {
+    title = $(this).children("#title").html()
+    if (title.search(regex) != -1) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
+  });
+});
+
+
+</script>
+
+</body>
+</html>
