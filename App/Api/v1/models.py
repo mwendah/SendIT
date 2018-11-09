@@ -27,8 +27,7 @@ class ParcelModel(object):
 
 	parcel.parcels.append(payload)
 
-
-	def get_all(self):
+	def get_order(self):
 		return parcel.parcels
 
 
@@ -40,38 +39,6 @@ class ParcelModel(object):
 				return ParcelModel
 
 
-				def delete_order(self,id)
-	self.id="id"
-
-	paylaod={
 	
-	"id":().int,
-	}
-
-	parcel.parcels.delete(payload)
-
-	def Create_Account(self,username,email,password)
-	
-self.username=username
-	self.email=email
-	self.password=password
-
-
-
-	paylaod={
-
-	"username"=self.email
-	"email"=self.email
-	"password"=self.password
-	"
-
-	}
-
-	return jsonify{
-	"message":"account created"
-
-	}
-
-
 			
 
