@@ -27,17 +27,18 @@ class ParcelModel(object):
 
 	parcel.parcels.append(payload)
 
-	def get_order(self):
-		return parcel.parcels
 
 
+	
+				def delete_order(self,id)
+	self.id="id"
 
-		def get_single_parcel(self,id):
-	   for ParcelModel in parcel.parcels
-:
-				if ParcelModel["id"] ==id +1
-				return ParcelModel
+	paylaod={
+	
+	"id":().int,
+	}
 
+	parcel.parcels.delete(payload)
 
 	
 			
