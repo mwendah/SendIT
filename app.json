@@ -1,0 +1,17 @@
+{
+  "name": "api_endpoints",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/json"
+    }
+  ]
+}
